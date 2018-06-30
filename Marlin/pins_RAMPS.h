@@ -113,7 +113,6 @@
 #define E0_ENABLE_PIN      30   // BAKA MOD E1 to E0
 #define E0_CS_PIN          44   // BAKA MOD E1 to E0
 
-
 #if ENABLED(HAVE_TMC2208)
   /**
    * TMC2208 stepper drivers
@@ -167,8 +166,8 @@
 //
 // Temperature Sensors
 //
-#define TEMP_1_PIN         13   // BAKA MOD TEMP_0 to TEMP_1 // Analog Input
-#define TEMP_0_PIN         15   // BAKA MOD TEMP_1 to TEMP_0 // Analog Input
+#define TEMP_1_PIN         3   // BAKA MOD TEMP_0 to TEMP_1 // Analog Input
+#define TEMP_0_PIN         4   // BAKA MOD TEMP_1 to TEMP_0 // Analog Input
 #define TEMP_BED_PIN       14   // Analog Input
 
 // SPI for Max6675 or Max31855 Thermocouple
@@ -201,14 +200,14 @@
 #ifndef MOSFET_D_PIN
   #define MOSFET_D_PIN  -1
 #endif
-#ifndef RAMPS_D8_PIN
-  #define RAMPS_D8_PIN   9 // BAKA MOD Output D8 (8) is not other one D9 (9)
+#ifndef RAMPS_D8_PIN    // BED
+  #define RAMPS_D8_PIN   10 // BAKA MOD BED
 #endif
 #ifndef RAMPS_D9_PIN
-  #define RAMPS_D9_PIN   8 // BAKA MOD Output D9 (9) is not other one D8 (8)
+  #define RAMPS_D9_PIN   9 // BAKA MOD  / EXTRUDER 1
 #endif
 #ifndef RAMPS_D10_PIN
-  #define RAMPS_D10_PIN 10
+  #define RAMPS_D10_PIN 8 // BAKA MOD  / EXTRUDER 0
 #endif
 
 #define HEATER_0_PIN     RAMPS_D10_PIN
@@ -277,9 +276,9 @@
     #define SPINDLE_DIR_PIN           5
   #elif !(ENABLED(ULTRA_LCD) && ENABLED(NEWPANEL) \
       && (ENABLED(PANEL_ONE) || ENABLED(VIKI2) || ENABLED(miniVIKI) || ENABLED(MINIPANEL) || ENABLED(REPRAPWORLD_KEYPAD)))  // try to use AUX 2
-    #define SPINDLE_LASER_ENABLE_PIN 40  // Pin should have a pullup/pulldown!
-    #define SPINDLE_LASER_PWM_PIN    44  // MUST BE HARDWARE PWM
-    #define SPINDLE_DIR_PIN          65
+    #define SPINDLE_LASER_ENABLE_PIN 4  // BAKA MOD 40  // Pin should have a pullup/pulldown!
+    #define SPINDLE_LASER_PWM_PIN    6 // BAKA MOD 44  // MUST BE HARDWARE PWM
+    #define SPINDLE_DIR_PIN          5 // BAKA MOD 65
   #endif
 #endif
 
