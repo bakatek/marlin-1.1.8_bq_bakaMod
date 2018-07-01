@@ -103,15 +103,15 @@
 #define Z_ENABLE_PIN       62
 #define Z_CS_PIN           40
 
-#define E1_STEP_PIN        26   // BAKA MOD E0 to E1
-#define E1_DIR_PIN         28   // BAKA MOD E0 to E1
-#define E1_ENABLE_PIN      24   // BAKA MOD E0 to E1
-#define E1_CS_PIN          42   // BAKA MOD E0 to E1
+#define E1_STEP_PIN        36   //26   // BAKA MOD E0 to E1
+#define E1_DIR_PIN         34   //28   // BAKA MOD E0 to E1
+#define E1_ENABLE_PIN      30   //24   // BAKA MOD E0 to E1
+#define E1_CS_PIN          44   //42   // BAKA MOD E0 to E1
 
-#define E0_STEP_PIN        36   // BAKA MOD E1 to E0
-#define E0_DIR_PIN         34   // BAKA MOD E1 to E0
-#define E0_ENABLE_PIN      30   // BAKA MOD E1 to E0
-#define E0_CS_PIN          44   // BAKA MOD E1 to E0
+#define E0_STEP_PIN        26   //36   // BAKA MOD E1 to E0
+#define E0_DIR_PIN         28   //34   // BAKA MOD E1 to E0
+#define E0_ENABLE_PIN      24   //30   // BAKA MOD E1 to E0
+#define E0_CS_PIN          42   //44   // BAKA MOD E1 to E0
 
 #if ENABLED(HAVE_TMC2208)
   /**
