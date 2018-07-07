@@ -204,10 +204,10 @@
   #define RAMPS_D8_PIN   10 // BAKA MOD BED
 #endif
 #ifndef RAMPS_D9_PIN
-  #define RAMPS_D9_PIN   8 // BAKA MOD  / EXTRUDER 1
+  #define RAMPS_D9_PIN   9 // BAKA MOD  / EXTRUDER 1
 #endif
 #ifndef RAMPS_D10_PIN
-  #define RAMPS_D10_PIN 9 // BAKA MOD  / EXTRUDER 0
+  #define RAMPS_D10_PIN 8 // BAKA MOD  / EXTRUDER 0
 #endif
 
 #define HEATER_0_PIN     RAMPS_D10_PIN
