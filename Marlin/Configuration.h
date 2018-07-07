@@ -355,9 +355,13 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // Hephestos i3 // BAKA MOD
-  #define  DEFAULT_Kp 23.05 // BAKA MOD
-  #define  DEFAULT_Ki 2.00 // BAKA MOD
-  #define  DEFAULT_Kd 66.47 // BAKA MOD
+  #define  DEFAULT_Kp 32.23
+  #define  DEFAULT_Ki 2.71
+  #define  DEFAULT_Kd 95.71
+  
+  //#define  DEFAULT_Kp 23.05 // BAKA MOD
+  //#define  DEFAULT_Ki 2.00 // BAKA MOD
+  //#define  DEFAULT_Kd 66.47 // BAKA MOD
 
   // Ultimaker
   //#define  DEFAULT_Kp 22.2
@@ -695,7 +699,7 @@
  *      O-- FRONT --+
  *    (0,0)
  */
-#define X_PROBE_OFFSET_FROM_EXTRUDER 0 // BAKA MOD 10  // X offset: -left  +right  [of the nozzle]
+#define X_PROBE_OFFSET_FROM_EXTRUDER 3// BAKA MOD 10  // X offset: -left  +right  [of the nozzle]
 #define Y_PROBE_OFFSET_FROM_EXTRUDER 4 // BAKA MOD 10  // Y offset: -front +behind [the nozzle]
 #define Z_PROBE_OFFSET_FROM_EXTRUDER 3 // BAKA MOD 0   // Z offset: -below +above  [the nozzle]
 
@@ -926,16 +930,16 @@
   #define GRID_MAX_POINTS_Y 4 // BAKA MOD GRID_MAX_POINTS_X
 
   // Set the boundaries for probing (where the probe can reach).
-  #define LEFT_PROBE_BED_POSITION 5 // BAKA MOD 15
+  #define LEFT_PROBE_BED_POSITION 15 // BAKA MOD 15
   #define RIGHT_PROBE_BED_POSITION 166  //190 // BAKA MOD 170
   #define FRONT_PROBE_BED_POSITION 13  //40 // BAKA MOD 20
   #define BACK_PROBE_BED_POSITION 350   //360 // BAKA MOD 170
 
   // The Z probe minimum outer margin (to validate G29 parameters).
-  #define MIN_PROBE_EDGE 10
+  #define MIN_PROBE_EDGE 15
 
   // Probe along the Y axis, advancing X after each column
-  //#define PROBE_Y_FIRST
+  #define PROBE_Y_FIRST
 
   #if ENABLED(AUTO_BED_LEVELING_BILINEAR)
 
